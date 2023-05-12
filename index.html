@@ -12,22 +12,22 @@
     <h1>Basic Calculator</h1>
     <div class="container">
       <input type="text" id="result" readonly /><br /><br />
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>+</button><br />
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
-      <button>-</button><br />
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
-      <button>*</button><br />
-      <button>0</button>
-      <button>/</button>
-      <button>Clear</button>
-      <button>=</button><br />
+      <button onclick="updateResult('1')">1</button>
+      <button onclick="updateResult('2')">2</button>
+      <button onclick="updateResult('3')">3</button>
+      <button onclick="updateResult('+')">+</button><br />
+      <button onclick="updateResult('4')">4</button>
+      <button onclick="updateResult('5')">5</button>
+      <button onclick="updateResult('6')">6</button>
+      <button onclick="updateResult('-')">-</button><br />
+      <button onclick="updateResult('7')">7</button>
+      <button onclick="updateResult('8')">8</button>
+      <button onclick="updateResult('9')">9</button>
+      <button onclick="updateResult('*')">*</button><br />
+      <button onclick="updateResult('0')">0</button>
+      <button onclick="updateResult('/')">/</button>
+      <button onclick="clearResult()">Clear</button>
+      <button onclick="calculate()">=</button><br />
     </div>
   </body>
 </html>
